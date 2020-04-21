@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E204DC82-CC44-433B-817C-E63C5F9144CC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Work_PdvSystem_Project.My.MyApplication</StartupObject>
+    <RootNamespace>Work_PdvSystem_Project</RootNamespace>
+    <AssemblyName>Work_PdvSystem_Project</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Work_PdvSystem_Project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Work_PdvSystem_Project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AlphaBlendTextBox">
+      <HintPath>..\Componentes\AlphaBlendTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dialogs\EnterOperatorCodeDialog.Designer.vb">
+      <DependentUpon>EnterOperatorCodeDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\EnterOperatorCodeDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\MessagePdv.Designer.vb">
+      <DependentUpon>MessagePdv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\MessagePdv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions PDV\Functions_MoreFunctions.Designer.vb">
+      <DependentUpon>Functions_MoreFunctions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Functions PDV\Functions_MoreFunctions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions PDV\Functions_NFCe.Designer.vb">
+      <DependentUpon>Functions_NFCe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Functions PDV\Functions_NFCe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions PDV\Functions_ParâmetrosDoPdv.Designer.vb">
+      <DependentUpon>Functions_ParâmetrosDoPdv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Functions PDV\Functions_ParâmetrosDoPdv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions PDV\Functions_POS.Designer.vb">
+      <DependentUpon>Functions_POS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Functions PDV\Functions_POS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions PDV\Functions_RotinasDiárias.Designer.vb">
+      <DependentUpon>Functions_RotinasDiárias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Functions PDV\Functions_RotinasDiárias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FunctionsPdvDialog.Designer.vb">
+      <DependentUpon>FunctionsPdvDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FunctionsPdvDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\HeaderPointOfSaleControlItem.Designer.vb">
+      <DependentUpon>HeaderPointOfSaleControlItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\HeaderPointOfSaleControlItem.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\InformationsPointOfSaleControlItem.Designer.vb">
+      <DependentUpon>InformationsPointOfSaleControlItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\InformationsPointOfSaleControlItem.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Interface_FormBorder.Designer.vb">
+      <DependentUpon>Interface_FormBorder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Interface_FormBorder.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Interface_LoadingGift.Designer.vb">
+      <DependentUpon>Interface_LoadingGift.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Interface_LoadingGift.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\ListOfSale\ProductListItemControl.Designer.vb">
+      <DependentUpon>ProductListItemControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ListOfSale\ProductListItemControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\ListOfSale\ProductWithDiscountListItemControl.Designer.vb">
+      <DependentUpon>ProductWithDiscountListItemControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ListOfSale\ProductWithDiscountListItemControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\ListOfSale\SubtitleListItemControl.Designer.vb">
+      <DependentUpon>SubtitleListItemControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ListOfSale\SubtitleListItemControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\MenuListFuncionsControlItem.Designer.vb">
+      <DependentUpon>MenuListFuncionsControlItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\MenuListFuncionsControlItem.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoadingSystemForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingSystemForm.Designer.vb">
+      <DependentUpon>LoadingSystemForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KeyboardPdvForm.Designer.vb">
+      <DependentUpon>KeyboardPdvForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="KeyboardPdvForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModulePDV.vb" />
+    <Compile Include="ModuleSoftware.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PointOfSaleForm.Designer.vb">
+      <DependentUpon>PointOfSaleForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PointOfSaleForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dialogs\EnterOperatorCodeDialog.resx">
+      <DependentUpon>EnterOperatorCodeDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\MessagePdv.resx">
+      <DependentUpon>MessagePdv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions PDV\Functions_MoreFunctions.resx">
+      <DependentUpon>Functions_MoreFunctions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions PDV\Functions_NFCe.resx">
+      <DependentUpon>Functions_NFCe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions PDV\Functions_ParâmetrosDoPdv.resx">
+      <DependentUpon>Functions_ParâmetrosDoPdv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions PDV\Functions_POS.resx">
+      <DependentUpon>Functions_POS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions PDV\Functions_RotinasDiárias.resx">
+      <DependentUpon>Functions_RotinasDiárias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FunctionsPdvDialog.resx">
+      <DependentUpon>FunctionsPdvDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\HeaderPointOfSaleControlItem.resx">
+      <DependentUpon>HeaderPointOfSaleControlItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\InformationsPointOfSaleControlItem.resx">
+      <DependentUpon>InformationsPointOfSaleControlItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Interface_FormBorder.resx">
+      <DependentUpon>Interface_FormBorder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Interface_LoadingGift.resx">
+      <DependentUpon>Interface_LoadingGift.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ListOfSale\ProductListItemControl.resx">
+      <DependentUpon>ProductListItemControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ListOfSale\ProductWithDiscountListItemControl.resx">
+      <DependentUpon>ProductWithDiscountListItemControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\MenuListFuncionsControlItem.resx">
+      <DependentUpon>MenuListFuncionsControlItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingSystemForm.resx">
+      <DependentUpon>LoadingSystemForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KeyboardPdvForm.resx">
+      <DependentUpon>KeyboardPdvForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PointOfSaleForm.resx">
+      <DependentUpon>PointOfSaleForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loading#1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loading#2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loading#3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loading#4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loading#5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loading#6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loading#7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loading#8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wallpaper#BackgroundPdvScreen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Functions_POS_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Functions_PDV_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Functions_PDV2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Functions_NFCe_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Functions_ChangeCard32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Functions_Search_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Functions_SearchUser_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Functions_CancelSale_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Functions_UnBlock32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Functions_Lock_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Functions_LoginUser_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Functions_ClosePDV_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Functions_RemoveUser_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Functions_MoneyDown_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Functions_ChangePaymentMode_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Functions_MoneyInPdv_32x32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
